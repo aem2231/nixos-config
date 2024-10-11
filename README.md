@@ -20,8 +20,8 @@
     │   └── utils.nix
     ├── home.nix
     └── system-modules
+        ├── base.nix
         ├── base
-        │   ├── base.nix
         │   ├── bluetooth.nix
         │   ├── flatpak.nix
         │   ├── nix-stuff.nix
@@ -36,7 +36,5 @@
         ├── steam.nix
         ├── users.nix
         └── utils.nix
-
-
 ```
 Thanks to [ryan4yin](https://github.com/ryan4yin) and his amazing [nixos and flakes](https://nixos-and-flakes.thiscute.world/preface), which helped me get a grasp on many of these concepts :)
