@@ -1,2 +1,2 @@
 ## My nixos configuration
-### Incomplete
+### Incomplete and needs more modularzing. Will finish soon :)
