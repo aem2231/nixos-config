@@ -4,8 +4,6 @@
   environment.systemPackages = with pkgs; [
     #Utilities
     vim
-    wget
-    curl
     unzip
     htop
     lf
