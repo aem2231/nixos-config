@@ -1,4 +1,3 @@
-  GNU nano 8.0                                                                    base.nix                                                                    Modified
 { config, pkgs, ... }:
 
 {
