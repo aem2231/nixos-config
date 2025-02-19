@@ -2,7 +2,7 @@
 
 {
   # Set the hostname for the system
-  networking.hostName = "nixos";
+  networking.hostName = "prez";
 
   # Enable NetworkManager for managing network connections
   networking.networkmanager.enable = true;
