@@ -11,4 +11,10 @@
     pulse.enable = true;
     jack.enable = true; # If you want to use JACK applications
   };
+
+  # Galaxy Buds stuff
+  environment.systemPackages = [
+    pkgs.galaxy-buds-client
+    pkgs.earbuds
+  ];
 }
