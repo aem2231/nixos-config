@@ -3,10 +3,6 @@
 {
   home.packages = with pkgs; [
     vscode
-    jetbrains.clion
-    jetbrains.rider
-    jetbrains.idea-community
-    jetbrains.pycharm-community
     zed-editor
     godot_4
     android-studio
