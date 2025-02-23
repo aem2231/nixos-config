@@ -22,11 +22,9 @@
     hyprland
   '';
 
-  #Enable gpu dxrivers
-  services.xserver.videoDrivers = ["amdgpu"];
-
   # Enable the hyprland compositor
   programs.hyprland.enable = true;
+
 
   # XDG Portal
   xdg.portal.enable = true;
@@ -36,9 +34,10 @@
   programs.thunar.enable = true;
 
   environment.systemPackages = with pkgs; [
-    kitty
+    inputs.zen-browser.packages."${system}".twilight
     swww
     dunst
+    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
     # Waybar
     (waybar.overrideAttrs (oldAttrs: {
       mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];

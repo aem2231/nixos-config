@@ -12,6 +12,7 @@
     ../../modules/common/home/git.nix
     ../../modules/common/home/misc.nix
     ../../modules/common/home/networking-tools.nix
+    ../../modules/common/home/steam.nix
     ../../modules/common/home/utils.nix
     inputs.spicetify-nix.homeManagerModules.default
   ];

@@ -17,13 +17,4 @@
     ethtool  # Network device management
     openvpn  # VPN client (optional)
   ];
-
-  # SSH client configuration for user (if needed)
-  programs.ssh = {
-    enable = true;
-    forwardAgent = true;
-    extraConfig = ''
-      # Add any additional SSH config here, if needed
-    '';
-  };
 }

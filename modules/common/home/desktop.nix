@@ -7,7 +7,6 @@
     ghostty
     vesktop
     rofi-wayland
-    spicetify-cli
     swww
   ];
 }
