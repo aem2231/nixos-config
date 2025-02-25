@@ -15,6 +15,7 @@
     hyprshot
     onlyoffice-bin
     feh
+    yazi
     inkscape
   ];
 }
