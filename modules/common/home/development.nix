@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     vscode
+#    jetbrains.clion
     zed-editor
     godot_4
     android-studio
@@ -10,7 +11,7 @@
     cmake
     gnumake
     gdb
-    quickemu
+    qemu
     rust-analyzer
     mgba
     qFlipper

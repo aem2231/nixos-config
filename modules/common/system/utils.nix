@@ -16,5 +16,6 @@
     graphicsmagick
   ];
 
+  hardware.flipperzero.enable = true;
   virtualisation.docker.enable = true;
 }
