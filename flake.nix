@@ -32,7 +32,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-
+            home-manager.backupFileExtension = "backup";   
             home-manager.users.eris = import ./hosts/desktop/home.nix {
               inherit inputs pkgs;
               inherit (nixpkgs) lib;

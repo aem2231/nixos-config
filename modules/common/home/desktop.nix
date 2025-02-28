@@ -6,7 +6,18 @@
     thunderbird
     ghostty
     vesktop
-    rofi-wayland
     swww
   ];
+  programs.rofi = {
+    enable = true;
+    package = pkgs.rofi;
+    theme = ./themes/catppuccin.rasi;
+    plugins = [
+      pkgs.rofi-emoji-wayland
+      pkgs.rofi-calc
+      pkgs.rofi-bluetooth
+      pkgs.rofi-screenshot
+      pkgs.rofi-power-menu
+    ];
+  };
 }
