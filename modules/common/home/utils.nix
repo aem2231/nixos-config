@@ -8,6 +8,7 @@
     grimblast
     obs-studio
     playerctl
+    btop
     grim
     jq
     slurp
@@ -18,5 +19,8 @@
     yazi
     inkscape
     neovim
+    ffcast
+    slop
+    xclip
   ];
 }

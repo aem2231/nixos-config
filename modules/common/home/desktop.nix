@@ -20,7 +20,7 @@
       pkgs.rofi-power-menu
     ];
     extraConfig = {
-      modes = "window,drun,run,ssh,combi,calc,power-menu:${pkgs.rofi-power-menu}/bin/rofi-power-menu";    
+      modes = "window,drun,run,ssh,combi,calc,bluetooth:${pkgs.rofi-bluetooth}/bin/rofi-bluetooth,screenshot:${pkgs.rofi-screenshot}/bin/rofi-screenshot,power-menu:${pkgs.rofi-power-menu}/bin/rofi-power-menu";    
     };
   };
 }
