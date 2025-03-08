@@ -6,7 +6,10 @@
     thunderbird
     ghostty
     vesktop
+    discordo
     swww
+    rofi-bluetooth
+    rofi-screenshot
   ];
   programs.rofi = {
     enable = true;
@@ -15,8 +18,6 @@
     plugins = [
       pkgs.rofi-emoji-wayland
       pkgs.rofi-calc
-      pkgs.rofi-bluetooth
-      pkgs.rofi-screenshot
       pkgs.rofi-power-menu
     ];
     extraConfig = {
