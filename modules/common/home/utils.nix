@@ -21,6 +21,6 @@
     neovim
     ffcast
     slop
-    xclip
+    xclip 
   ];
 }
