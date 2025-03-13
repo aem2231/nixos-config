@@ -7,5 +7,6 @@
       #./ssh.nix
       ./locales.nix
       ./users.nix
+      ./drivers.nix
     ];
 }

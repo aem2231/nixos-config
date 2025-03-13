@@ -15,9 +15,8 @@
 }
 
 window {
-    height: 13em;
-    width: 50em;
-
+    height: 15em;
+    width: 45em;
     border: 0;
     border-radius: 5;
     border-color: @sapphire;

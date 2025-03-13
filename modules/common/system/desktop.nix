@@ -2,6 +2,9 @@
 
 {
 
+ environment.sessionVariables. NIXOS_OZONE_WL = 1;
+
+
  programs.zsh.enable = true;
 
  # Enable display manager
@@ -24,7 +27,7 @@
 
   # Enable the hyprland compositor
   programs.hyprland.enable = true;
-
+  programs.hyprland.xwayland.enable = true;
 
   # XDG Portal
   xdg.portal.enable = true;
@@ -36,7 +39,11 @@
   environment.systemPackages = with pkgs; [
     inputs.zen-browser.packages."${system}".twilight
     swww
+    nwg-look
     dunst
+    hyprshot
+    brightnessctl
+    hyprpaper
     inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
     # Waybar
     (waybar.overrideAttrs (oldAttrs: {

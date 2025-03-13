@@ -12,7 +12,6 @@
     ../../modules/common/home/git.nix
     ../../modules/common/home/misc.nix
     ../../modules/common/home/networking-tools.nix
-#    ../../modules/common/home/steam.nix
     ../../modules/common/home/utils.nix
     inputs.spicetify-nix.homeManagerModules.default
   ];
@@ -41,6 +40,6 @@
     colorScheme = "mocha";
   };
 
-  home.stateVersion = "24.11";
+  home.stateVersion = "23.11";
   programs.home-manager.enable = true;
 }
