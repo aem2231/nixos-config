@@ -11,7 +11,6 @@
     pamixer
     binutils
     ueberzug
-    ffmpeg_6
     ghostscript
     graphicsmagick
   ];

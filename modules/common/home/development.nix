@@ -6,6 +6,7 @@
 #    jetbrains.clion
     zed-editor
     godot_4
+    lmstudio
     android-studio
     gcc
     cmake

@@ -19,6 +19,7 @@
     yazi
     inkscape
     neovim
+    tor
     ffcast
     slop
     xclip 

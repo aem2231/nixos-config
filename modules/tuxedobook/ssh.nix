@@ -2,11 +2,15 @@
 
 {
   # SSH client configuration for user (if needed)
-  programs.ssh = {
+  services.openssh = {
     enable = true;
-    forwardAgent = true;
-    extraConfig = ''
-      # Add any additional SSH config here, if needed
-    '';
+    ports = [ 22 ];
+    settings = {
+      PasswordAuthentication = true;
+      AllowedUsers = null;
+      UseDns = true;
+      X11Forwarding = false;
+      PermitRootLogin = "prohibit-password";
+    }; 
   };
 }

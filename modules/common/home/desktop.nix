@@ -8,8 +8,11 @@
     vesktop
     discordo
     swww
+    obsidian
+    affine
     rofi-bluetooth
     rofi-screenshot
+    tor-browser
   ];
   programs.rofi = {
     enable = true;

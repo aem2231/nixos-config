@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     cmatrix
+    genact
     sl
     cowsay
     cbonsai

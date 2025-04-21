@@ -1,7 +1,7 @@
 { pkgs, ...}:
 {
   # Enable keyboard
-  hardware.tuxedo-keyboard.enable = true;
+  hardware.tuxedo-drivers.enable = true;
   
   #services.power-profiles-daemon.enable = true;
   
@@ -12,11 +12,11 @@
 
   services.xserver.videoDrivers = ["amdgpu"];
 
-  hardware.opengl.extraPackages = with pkgs; [
+  hardware.graphics.extraPackages = with pkgs; [
     amdvlk
   ];
   # For 32 bit applications 
-  hardware.opengl.extraPackages32 = with pkgs; [
+  hardware.graphics.extraPackages32 = with pkgs; [
     driversi686Linux.amdvlk
   ];
 

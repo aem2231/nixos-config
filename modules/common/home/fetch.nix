@@ -9,6 +9,7 @@
     yafetch
     afetch
     bunnyfetch
+    hyfetch
     fastfetch
   ];
 }

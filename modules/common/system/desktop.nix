@@ -8,23 +8,27 @@
  programs.zsh.enable = true;
 
  # Enable display manager
-  services.greetd = {
-    enable = true;
-    settings = {
-     default_session.command = ''
-      ${pkgs.greetd.tuigreet}/bin/tuigreet \
-        --time \
-        --asterisks \
-        --user-menu \
-        --cmd Hyprland
-    '';
-    };
-  };
+ # services.greetd = {
+ #   enable = true;
+ #   settings = {
+ #    default_session.command = ''
+ #     ${pkgs.greetd.tuigreet}/bin/tuigreet \
+ #       --time \
+ #       --asterisks \
+ #       --user-menu \
+ #       --cmd Hyprland
+ #   '';
+ #   };
+ # };
 
-  environment.etc."greetd/environments".text = ''
-    hyprland
-  '';
+ # environment.etc."greetd/environments".text = ''
+ #   hyprland
+ # '';
 
+  services.displayManager.ly.enable = true;
+  
+  services.flatpak.enable = true;
+  
   # Enable the hyprland compositor
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
@@ -39,11 +43,15 @@
   environment.systemPackages = with pkgs; [
     inputs.zen-browser.packages."${system}".twilight
     swww
+    poweralertd
     nwg-look
     dunst
     hyprshot
     brightnessctl
+    glib
+    alacritty
     hyprpaper
+    rose-pine-cursor
     inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
     # Waybar
     (waybar.overrideAttrs (oldAttrs: {

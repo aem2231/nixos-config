@@ -9,7 +9,7 @@
 
   # Enable the firewall for basic security
   networking.firewall.enable = true;
-  networking.firewall.allowedTCPPorts = [ 5000 ];
+  networking.firewall.allowedTCPPorts = [ 5000 22 ];
 
 
   # Enable SSH server (optional, if needed system-wide)

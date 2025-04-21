@@ -4,7 +4,7 @@
   imports =
     [
       ./networking.nix
-      #./ssh.nix
+      ./ssh.nix
       ./locales.nix
       ./users.nix
       ./drivers.nix
